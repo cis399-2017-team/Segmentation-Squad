@@ -1,0 +1,3 @@
+In the EC2 console, find the instance that you want the public IP for. Click on the instance to make it active.
+In the bottom section of the console, under the Description tab, find the item labeled "IPv4 Public IP. This is your 
+public IP.
