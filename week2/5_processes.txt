@@ -1,0 +1,6 @@
+ubuntu@ip-10-0-5-119:~$ ps
+  PID TTY          TIME CMD
+ 2080 pts/0    00:00:00 bash
+ 2137 pts/0    00:00:00 ps
+
+Output from SegmentationSquad1

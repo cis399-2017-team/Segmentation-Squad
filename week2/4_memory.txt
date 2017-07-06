@@ -1,0 +1,6 @@
+ubuntu@ip-10-0-5-119:~$ free
+              total        used        free      shared  buff/cache   available
+Mem:         498580       42484      127164        2476      328932      423184
+Swap:             0           0           0
+
+Output from SegmentationSquad1
