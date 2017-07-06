@@ -1,0 +1,20 @@
+ubuntu@ip-10-0-5-119:~$ ifconfig
+eth0      Link encap:Ethernet  HWaddr 0a:9b:fc:4b:69:26  
+          inet addr:10.0.5.119  Bcast:10.0.5.255  Mask:255.255.255.0
+          inet6 addr: fe80::89b:fcff:fe4b:6926/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:9001  Metric:1
+          RX packets:39890 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:15841 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:46025147 (46.0 MB)  TX bytes:1841527 (1.8 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:160 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:160 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:11840 (11.8 KB)  TX bytes:11840 (11.8 KB)
+
+Output from SegmentationSquad1
