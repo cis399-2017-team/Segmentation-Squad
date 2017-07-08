@@ -1,3 +1,16 @@
 SegmentationSquad1
 ID: i-08f2ca95ca5246e84
-Public IP: 10.0.5.119
+Private IP: 10.0.5.119
+
+SegmentationSquad2
+ID: i-065f044d64c8bd573
+Private IP: 10.0.5.93
+
+SegmentationSquad3
+ID: i-0e694fda977d1d66
+Private IP: 10.0.5.134
+
+SegmentationSquad4
+ID: i-0661d7a54d089dd6d
+Private IP: 10.0.5.224
+
