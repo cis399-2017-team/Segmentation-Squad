@@ -1,0 +1,87 @@
+Script started on Mon 17 Jul 2017 05:26:53 PM UTC
+]0;root@ip-10-0-5-134: ~/Segmentation-Squad/week3[01;32mroot@ip-10-0-5-134[00m:[01;34m~/Segmentation-Squad/week3[00m# apt-get purge s[Kopenssh-server
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+The following packages will be REMOVED:
+  openssh-server*
+0 upgraded, 0 newly installed, 1 to remove and 22 not upgraded.
+After this operation, 912 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79601 files and directories currently installed.)
+Removing openssh-server (1:7.2p2-4ubuntu2.2) ...
+Purging configuration files for openssh-server (1:7.2p2-4ubuntu2.2) ...
+Processing triggers for man-db (2.7.5-1) ...
+]0;root@ip-10-0-5-134: ~/Segmentation-Squad/week3[01;32mroot@ip-10-0-5-134[00m:[01;34m~/Segmentation-Squad/week3[00m# puppet agent -t
+[0;32mInfo: Retrieving pluginfacts[0m
+[0;32mInfo: Retrieving plugin[0m
+[0;32mInfo: Caching catalog for ip-10-0-5-134.us-west-2.compute.internal[0m
+[0;32mInfo: Applying configuration version '1500276805'[0m
+[mNotice: /Stage[main]/Sshd/Package[openssh-server]/ensure: ensure changed 'purged' to 'present'[0m
+[mNotice: /Stage[main]/Sshd/File[/etc/ssh/sshd_config]/content: 
+--- /etc/ssh/sshd_config	2017-07-17 17:27:16.493663902 +0000
++++ /tmp/puppet-file20170717-12243-9t6qs6	2017-07-17 17:27:18.573646768 +0000
+@@ -30,7 +30,7 @@
+ 
+ RSAAuthentication yes
+ PubkeyAuthentication yes
+-#AuthorizedKeysFile	%h/.ssh/authorized_keys
++#AuthorizedKeysFile     %h/.ssh/authorized_keys
+ 
+ # Don't read the user's ~/.rhosts and ~/.shosts files
+ IgnoreRhosts yes
+@@ -49,40 +49,4 @@
+ ChallengeResponseAuthentication no
+ 
+ # Change to no to disable tunnelled clear text passwords
+-#PasswordAuthentication yes
+-
+-# Kerberos options
+-#KerberosAuthentication no
+-#KerberosGetAFSToken no
+-#KerberosOrLocalPasswd yes
+-#KerberosTicketCleanup yes
+-
+-# GSSAPI options
+-#GSSAPIAuthentication no
+-#GSSAPICleanupCredentials yes
+-
+-X11Forwarding yes
+-X11DisplayOffset 10
+-PrintMotd no
+-PrintLastLog yes
+-TCPKeepAlive yes
+-#UseLogin no
+-
+-#MaxStartups 10:30:60
+-#Banner /etc/issue.net
+-
+-# Allow client to pass locale environment variables
+-AcceptEnv LANG LC_*
+-
+-Subsystem sftp /usr/lib/openssh/sftp-server
+-
+-# Set this to 'yes' to enable PAM authentication, account processing,
+-# and session processing. If this is enabled, PAM authentication will
+-# be allowed through the ChallengeResponseAuthentication and
+-# PasswordAuthentication.  Depending on your PAM configuration,
+-# PAM authentication via ChallengeResponseAuthentication may bypass
+-# the setting of "PermitRootLogin without-password".
+-# If you just want the PAM account and session checks to run without
+-# PAM authentication, then enable this but set PasswordAuthentication
+-# and ChallengeResponseAuthentication to 'no'.
+-UsePAM yes
++PasswordAuthentication no
+[0m
+[0;32mInfo: Computing checksum on file /etc/ssh/sshd_config[0m
+[0;32mInfo: FileBucket got a duplicate file {md5}bd3a2b95f8b4b180eed707794ad81e4d[0m
+[0;32mInfo: /Stage[main]/Sshd/File[/etc/ssh/sshd_config]: Filebucketed /etc/ssh/sshd_config to puppet with sum bd3a2b95f8b4b180eed707794ad81e4d[0m
+[mNotice: /Stage[main]/Sshd/File[/etc/ssh/sshd_config]/content: content changed '{md5}bd3a2b95f8b4b180eed707794ad81e4d' to '{md5}000af636c26926326c2d028b5eb36ad1'[0m
+[0;32mInfo: /Stage[main]/Sshd/File[/etc/ssh/sshd_config]: Scheduling refresh of Service[sshd][0m
+[0;32mInfo: /Stage[main]/Sshd/File[/etc/ssh/sshd_config]: Scheduling refresh of Service[sshd][0m
+[mNotice: /Stage[main]/Sshd/Service[sshd]: Triggered 'refresh' from 2 events[0m
+[mNotice: Finished catalog run in 3.50 seconds[0m
+]0;root@ip-10-0-5-134: ~/Segmentation-Squad/week3[01;32mroot@ip-10-0-5-134[00m:[01;34m~/Segmentation-Squad/week3[00m# exit
+exit
+
+Script done on Mon 17 Jul 2017 05:27:21 PM UTC
