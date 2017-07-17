@@ -1,0 +1,16 @@
+Script started on Mon 17 Jul 2017 05:29:31 PM UTC
+]0;root@ip-10-0-5-134: ~/Segmentation-Squad/week3[01;32mroot@ip-10-0-5-134[00m:[01;34m~/Segmentation-Squad/week3[00m# rm ~/.ssh/authorized_keys 
+]0;root@ip-10-0-5-134: ~/Segmentation-Squad/week3[01;32mroot@ip-10-0-5-134[00m:[01;34m~/Segmentation-Squad/week3[00m# puppet agent t[K-t
+[0;32mInfo: Retrieving pluginfacts[0m
+[0;32mInfo: Retrieving plugin[0m
+[0;32mInfo: Caching catalog for ip-10-0-5-134.us-west-2.compute.internal[0m
+[0;32mInfo: Applying configuration version '1500276805'[0m
+[mNotice: /Stage[main]/Sshd/Ssh_authorized_key[junck-key]/ensure: created[0m
+[mNotice: /Stage[main]/Sshd/Ssh_authorized_key[slynch]/ensure: created[0m
+[mNotice: Finished catalog run in 0.06 seconds[0m
+]0;root@ip-10-0-5-134: ~/Segmentation-Squad/week3[01;32mroot@ip-10-0-5-134[00m:[01;34m~/Segmentation-Squad/week3[00m# ls ~/.ssh
+authorized_keys
+]0;root@ip-10-0-5-134: ~/Segmentation-Squad/week3[01;32mroot@ip-10-0-5-134[00m:[01;34m~/Segmentation-Squad/week3[00m# exit
+exit
+
+Script done on Mon 17 Jul 2017 05:30:06 PM UTC
