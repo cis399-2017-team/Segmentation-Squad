@@ -1,5 +1,4 @@
 Shutting down one of the instances while the other is still running allows
 the load balancer to load pages from the running instance. Shutting down both
-causes the load balancer to not load any pages. Having both instances running ca
-uses the load balancer to load pages normally.
+causes the load balancer to not load any pages. Having both instances running causes the load balancer to load pages normally.
 
