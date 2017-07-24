@@ -21,3 +21,5 @@
 10.0.5.112 - - [24/Jul/2017:02:14:43 +0000] "GET /index.html HTTP/1.1" 200 11632 "-" "ELB-HealthChecker/1.0"
 10.0.5.31 - - [24/Jul/2017:02:14:53 +0000] "GET /index.html HTTP/1.1" 200 11632 "-" "ELB-HealthChecker/1.0"
 10.0.5.112 - - [24/Jul/2017:02:14:53 +0000] "GET /index.html HTTP/1.1" 200 11632 "-" "ELB-HealthChecker/1.0"
+10.0.5.31 - - [24/Jul/2017:20:56:43 +0000] "GET /index.html HTTP/1.1" 200 318 "-" "ELB-HealthChecker/1.0"
+10.0.5.119 - - [24/Jul/2017:20:56:44 +0000] "GET /index.html HTTP/1.1" 200 318 "-" "ELB-HealthChecker/1.0"
