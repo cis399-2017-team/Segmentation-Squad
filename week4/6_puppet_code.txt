@@ -9,6 +9,6 @@ file {
 			recurse => true,
 }
 
-Ensure directory will create a directory at hat path with the indicated
+Ensure directory will create a directory at that path with the indicated
 owner, group, and permissions. Recurse true allows files to be managed
 from the source directory.
