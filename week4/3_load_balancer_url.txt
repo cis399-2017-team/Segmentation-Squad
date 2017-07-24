@@ -1,1 +1,1 @@
-Segmentation-Squad-416778812.us-west-2.elb.amazonaws.com
+http://segmentation-squad-416778812.us-west-2.elb.amazonaws.com/
