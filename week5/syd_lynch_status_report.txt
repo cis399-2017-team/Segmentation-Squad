@@ -1,0 +1,36 @@
+Alphabet11-14
+
+alphabet[11] - login successful
+alphabet[12] - login successful
+
+Binary Boiz 
+
+Binary_Boiz_2 - login successful
+Binary_Boiz_3 - login failed
+
+Fork Bomb 
+
+Forkbomb-p - login successful
+Forkbomb-p2 - login successful
+
+Fighting Mongooses 
+
+FtngMngs_2 - login successful
+FtngMngs_3 - login successful
+
+Hideous Snakes 
+
+Hideous Asp - login successful
+Hideous Boa - login successful
+
+Hot Shame 
+
+Hot-Shame-2 - login successful
+Hot-Shame-3 - login successful
+
+Ninjas 
+
+MeniNinja - login successful
+SteveNinja - login successful
+
+
