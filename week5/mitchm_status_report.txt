@@ -1,0 +1,22 @@
+Able to log into at least one instance?
+
+alphabet[11:14]
+YES
+
+binary boiz
+NO - username/key not added to .pp
+
+Fork Bomb
+YES
+
+Fighting Mongooses
+YES
+
+hideous snakes
+NO - username/key not added to .pp
+
+hot-shame
+NO - username/key not added to .pp
+
+ninjas
+YES
