@@ -1,5 +1,8 @@
 Segmentation Squad 1:
 
+mheb     pts/0        108.6.187.140    Mon Jul 31 04:57 - 04:57  (00:00)
+talabap  pts/0        73.164.228.201   Mon Jul 31 02:24 - 02:24  (00:00)
+ubuntu   pts/0        128.223.223.30   Mon Jul 31 01:37 - 01:41  (00:04)
 ubuntu   pts/0        128.223.223.30   Mon Jul 31 01:37   still logged in
 jdolan   pts/0        75.170.12.185    Mon Jul 31 01:32 - 01:32  (00:00)
 jemin    pts/0        73.240.46.105    Sun Jul 30 23:46 - 23:47  (00:00)
@@ -13,6 +16,25 @@ slynch   pts/0        73.96.196.228    Sun Jul 30 21:54 - 21:54  (00:00)
 
 Segmentation Squad 2:
 
+ubuntu   pts/1        128.223.223.30   Mon Jul 31 21:34   still logged in
+loganr   pts/1        128.223.223.197  Mon Jul 31 21:25 - 21:25  (00:00)
+ubuntu   pts/0        128.223.223.245  Mon Jul 31 21:21   still logged in
+almensha pts/0        75.145.78.74     Mon Jul 31 21:11 - 21:11  (00:00)
+almensha pts/0        75.145.78.74     Mon Jul 31 21:09 - 21:09  (00:00)
+cconklin pts/0        128.223.223.194  Mon Jul 31 20:43 - 20:43  (00:00)
+lcs      pts/3        128.223.223.90   Mon Jul 31 19:39 - 19:42  (00:03)
+ubuntu   pts/2        128.223.223.245  Mon Jul 31 18:22 - 20:33  (02:11)
+ubuntu   pts/1        128.223.223.245  Mon Jul 31 17:46 - 19:58  (02:11)
+ubuntu   pts/0        128.223.223.245  Mon Jul 31 17:36 - 19:48  (02:11)
+ubuntu   pts/0        71.237.192.35    Mon Jul 31 11:23 - 13:37  (02:13)
+mheb     pts/0        108.6.187.140    Mon Jul 31 04:58 - 04:59  (00:00)
+hjo      pts/0        73.37.34.93      Mon Jul 31 04:17 - 04:17  (00:00)
+menif    pts/0        174.30.39.181    Mon Jul 31 03:34 - 03:34  (00:00)
+nsato    pts/0        73.240.200.192   Mon Jul 31 03:19 - 03:24  (00:05)
+talabap  pts/0        73.164.228.201   Mon Jul 31 02:26 - 02:26  (00:00)
+talabap  pts/0        73.164.228.201   Mon Jul 31 02:14 - 02:15  (00:00)
+talabap  pts/0        73.164.228.201   Mon Jul 31 02:13 - 02:14  (00:01)
+ubuntu   pts/0        128.223.223.30   Mon Jul 31 01:41 - 01:43  (00:01)
 jdolan   pts/0        75.170.12.185    Mon Jul 31 01:02 - 01:26  (00:23)
 cplachno pts/1        76.115.176.128   Mon Jul 31 00:03 - 00:04  (00:00)
 cplachno pts/1        76.115.176.128   Mon Jul 31 00:02 - 00:02  (00:00)
