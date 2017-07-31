@@ -1,0 +1,20 @@
+Ninjas:
+Successfully ssh'd into the instance named "SteveNinja"
+
+Binary Boiz:
+Successfully ssh'd into the instance 
+
+Fork Bomb:
+Successfully ssh'd into the instance named "Forkbomb-p2"
+
+Hot Shame:
+Was able to ssh into the instance early on Sunday, but later in the day was unable to. Presumably because the instance is stopped.
+
+Alphabet 11 14:
+Successfully ssh'd into the instance named "alphabet[12]"
+
+Hideous Snakes:
+init.pp doesn't have an account for me, I emailed them on Sunday
+
+Fighting Mongooses:
+Successfully ssh'd into the instance named "FtngMngs_3"
