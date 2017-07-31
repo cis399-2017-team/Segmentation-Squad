@@ -34,3 +34,4 @@ MeniNinja - login successful
 SteveNinja - login successful
 
 
+I am able to successfully login to an agent instance for every other group.
