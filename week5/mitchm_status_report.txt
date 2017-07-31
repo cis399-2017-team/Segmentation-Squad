@@ -4,7 +4,7 @@ alphabet[11:14]
 YES
 
 binary boiz
-NO - username/key not added to .pp
+YES
 
 Fork Bomb
 YES
