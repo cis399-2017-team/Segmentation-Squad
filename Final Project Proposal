@@ -1,0 +1,11 @@
+For our final project we will implement a Puppet Forge module for managing MySQL on our AWS instances (Ubuntu, Puppet 3).
+
+Our goals are to have the module up and running with no errors, and to be able to manage MySQL resources/databases/users via our Puppet Master. In order to test this, we will try making changes, creating and deleting databases and user accounts, and watch for any errors.
+
+If successful, the project should make it easy to manage users databases and accounts and to quickly create new databases with custom configurations.
+
+Creating databases poses significant security threats, the well-known SQL injection attack being one.
+
+To complete the project we will have to implement a MySQL module and get it working without errors, and figure out a good system for automatic security updates without inturrupting service too much.
+
+We will do a write up of how we implemented the module, updating method, the different tests we ran to check for issues, descriptions of any problems we ran into and how we fixed them, and  a simple guide that would give a hypothetical user the basic knowledge they need to easily use our system.
