@@ -1,0 +1,63 @@
+Goals:
+  -Install and manage MySQL via Puppet on our master and agent node instances [done]
+    The MySQL puppet forge module's documentation wasn't great, and searching online let us know that we weren't the only ones who've had trouble managing the latest version of MySQL via Puppet on Ubuntu
+    After our first attempt resulted in dozens of lines of red error messages and frustrating troubleshooting to no avail, a full purge, reboot, and reinstall solved the problem
+  -Be able to use MySQL from any of the instances [done], although we current only have databases local to each instance created.
+
+  Our central goal was to successfully install the PuppetLabs MySQL module and use the provided
+  functionalities to easily create and manage MySQL databases on our instances. After many errors
+  related to the MySQL package on Ubuntu, we were able to do get the module working without issues.
+  The server, client, database, and user are declared in /etc/puppet/manifests/site.pp on each of our
+  instances. Running puppet agent -t applies this configuration and creates the database and user.
+  To test, we manually created tables and added entries through a MySQL console. Additionally, we
+  created a PHP file that takes user submission and inserts the values into a table in our database.
+
+User support:
+  Ideally this system makes managing MySQL less difficult than it otherwise would be, doing operations like adding users and editing user permissions.
+  This project only really affects those who manage MySQL databases. The module
+  allows for quick and easy database management through Puppet that can be applied
+  to multiple nodes. Issues may include future incompatibility as the module, puppet,
+  or MySQL are updated.
+
+Security considerations:
+  In its current state, there are multiple security concerns with our project.
+  The username and password to the MySQL server are "root" and git tracked,
+  both of which should be changed to a more secure solution.
+  In the future, instances with mysql could have their public ips removed and be accessed from instances with public IPs in the same subnet.
+  Finally, we are not checking for any malicious code in our PHP file. PHP has built-in
+  query sanitation but we did not implement this for our project. A user could potentially
+  drop data from our database without this safeguard.
+
+Work Required and Maintaining:
+  To accomplish our goals, we needed to understand how the MySQL puppet module worked
+  by reading its documentation and various tutorials. We spent time troubleshooting many errors
+  related to the Ubuntu MySQL package until we were able to successfully run puppet agent -t.
+  We also had to understand basic MySQL query syntax to manipulate the database, and basic
+  PHP to create a submission form that inserts into the database. To maintain our project, one
+  would need to keep the required software updated, maintain the database by removing unnecessary data,
+  and adding or removing users and databases as needed.
+
+User documentation:
+  All of our work can be found on our third instance Segmentation Squad 3, which is our puppet master.
+
+  To install, you can do one of two things
+    1) add "mod 'puppetlabs-mysql', '3.11.0'" to the puppet file
+    or
+    2)run "puppet module install puppetlabs-mysql --version 3.11.0"
+
+  To uninstall, run "sudo puppet module uninstall puppetlabs-mysql"
+
+  As root, you can connect to the MySQL server as follows:
+  - sudo bash
+  - mysql -p
+  - Enter "root" as password
+  - Running "show databases;" will output available databases. This shows the DB called
+  "user" which is what we created via Puppet.
+  - Calling "use user;" will select that database
+  - We created a table called "person" with columns "name" and "age", calling
+  "SELECT * FROM person" will output every entry in that table.
+  - All entries are added via PHP's built-in MySQL functionality. Visit
+  http://ec2-52-35-159-146.us-west-2.compute.amazonaws.com/ and submit the form
+  to add an entry to the table.
+
+  The index.php code can be found in /var/www/html/index.php.
